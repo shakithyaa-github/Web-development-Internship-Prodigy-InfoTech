@@ -1,0 +1,216 @@
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shakithyaa - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    
+    <h1>N S Shakithyaa</h1>
+    <p>ECE Student | Aspiring Software Developer | Tech Enthusiast</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">Career Objective</a>
+    <a href="#education">Education</a>
+    <a href="#internship">Internship</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Career Objective -->
+  <section id="about">
+    <h2>🎯 Career Objective</h2>
+    <p>
+      Aspiring to join a Software company where I can apply my skills, 
+      gain hands-on experience, and contribute to the team’s success.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>📚 Education</h2>
+    <ul>
+      <li><strong>Bachelor of Electronics and Communication</strong> – Sona College Of Technology  
+          CGPA: 8.32 (up to 3rd Sem)</li>
+      <li><strong>Higher Secondary Certificate</strong> – Sri Vidya Mandir Hr Sec School  
+          Percentage: 85.5%</li>
+    </ul>
+  </section>
+
+  <!-- Internship -->
+  <section id="internship">
+    <h2>💼 Internship</h2>
+    <p><strong>Smart Face Analysis using Java</strong> – ImageCon Academy (July 2025, 2 Weeks)  
+    Developed a Java-based application for facial feature detection.  
+    <em>Technologies Used: Java, Apache NetBeans</em></p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>🛠️ Projects</h2>
+    <ul>
+      <li><strong>Wireless Solar-Powered Electric Car Charging System</strong> (March 2025)  
+      Role: Documentation Head | Team Size: 3</li>
+      <li><strong>Light Based LED On/Off Circuit</strong> (May 2025)  
+      Designed using LDR & op-amp comparator</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>🏆 Achievements & Certificates</h2>
+    <ul>
+      <li>NPTEL Design Thinking – Elite Silver (75%)</li>
+      <li>Workshops: PCB Design, Radio Receiver Design, IoT with LoRaWAN, Machine Learning with Intel oneAPI</li>
+      <li>Hackathons: TNWISE 2025 (Kumaraguru College of Tech), Techathon 2025 (Sona College of Tech)</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>💻 Technical Skills</h2>
+    <p><strong>Software:</strong> C, Python, Java, HTML, CSS, SQL, Data Structure, Django</p>
+    <p><strong>Hardware:</strong> PCB Design, Circuit Prototype, Soldering, Hardware Assembly</p>
+    <p><strong>Tools:</strong> VS Code, MATLAB, SolidWorks, Apache NetBeans, Spyder</p>
+
+    <h2>🤝 Soft Skills</h2>
+    <p>Teamwork, Time Management, Adaptability, Critical Thinking</p>
+
+    <h2>🔮 Area of Interest</h2>
+    <p>Artificial Intelligence</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>📞 +91 9345168116</p>
+    <p>✉️ ns.shakithyaa@gmail.com | shakithyaa.23ece@sonatech.ac.in</p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/shakithyaa24" target="_blank">linkedin.com/in/shakithyaa24</a></p>
+    <p>💻 GitHub: <a href="https://github.com/Shakithyaa24" target="_blank">github.com/Shakithyaa24</a></p>
+    <a href="SHAKITHYAA-CV.pdf" download class="cv-btn">📄 Download My CV</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 N S Shakithyaa | Portfolio Website</p>
+  </footer>
+</body>
+</html>
+
+
+
+CSS
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  color: #333;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd60a;
+}
+
+section {
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.cv-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cv-btn:hover {
+  background: #023e8a;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
