@@ -1,0 +1,227 @@
+Html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo">🌟 MyWeb</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Build Something Amazing</h1>
+      <p>Your journey to becoming a web developer starts here.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>✨ Features</h2>
+    <div class="feature-card">
+      <h3>🛠️ Responsive Design</h3>
+      <p>Looks great on all devices: mobile, tablet, and desktop.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎨 Stylish UI</h3>
+      <p>Modern and vibrant design using HTML, CSS, and JS.</p>
+    </div>
+    <div class="feature-card">
+      <h3>⚡ Interactive Nav</h3>
+      <p>Navbar changes on scroll and hover—try it out!</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We are passionate about building modern, responsive websites that look great and perform smoothly.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@example.com</p>
+    <p>Phone: +91-1234567890</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyWeb. Built with 💙 by Shakithyaa</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+Css
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 999;
+  transition: background 0.4s;
+}
+
+nav.scrolled {
+  background: #1c1c3c;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sections Common */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 80px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #fff;
+  color: #764ba2;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+}
+
+/* Features Section */
+.features {
+  background: #f4f4f4;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feature-card {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+  background: #e9f5ff;
+}
+
+/* Contact Section */
+.contact {
+  background: #fbeeff;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+js
+
+
+
+// Navbar scroll color change
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
